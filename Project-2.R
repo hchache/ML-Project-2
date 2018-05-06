@@ -4,9 +4,7 @@ A.y <- training.data[1:5000,281]
 A.x.scaled <- scale(A.x,center=TRUE)
 
 
-# Classification: Comments or No Comments
-# All the values greater than 0 is considered as Comments
-# All the values equal to 0 is considered as No Comments
+# Classification: All the values greater than 0 is changed to 1
 A.y[A.y > 0] = 1
 A.new = cbind(A.x.scaled, A.y)
 # Processed dataset
