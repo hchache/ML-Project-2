@@ -22,7 +22,7 @@ A.new.one.sum = colSums(A.new.one[,1:10])
 
 # Mosek Model
 feedback.model.basic <-list()
-feedback.model.basic$sense <- "min"
+feedback.model.basic$sense <- "max"
 # Objective Coeffients 
 feedback.model.basic$c <- 1/2 * (A.new.one.sum - A.new.zero.sum) * (A.new.one.sum - A.new.zero.sum)
 # Contraint Matrix
