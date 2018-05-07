@@ -71,7 +71,7 @@ yhat=A.x.scaled %*% weights
 feedback.model.basic.error<-(A.y-yhat)*(A.y-yhat)
 
 mean(feedback.model.basic.error)
-# [1] 393.367
+# [1] 456.7856
 
 
 
@@ -83,7 +83,7 @@ feb.test.data.06.x.scaled <- scale(feb.test.data.06.x,center=TRUE)
 yhat1=feb.test.data.06.x.scaled %*% weights
 feedback.model.basic.error1<-(feb.test.data.06.y-yhat1)*(feb.test.data.06.y-yhat1)
 mean(feedback.model.basic.error1)
-# [1] 196.6851
+# [1] 412.4726
 
 
 
