@@ -60,7 +60,7 @@ yhat=A.x.scaled %*% weights
 feedback.model.basic.error<-(A.y-yhat)*(A.y-yhat)
 
 mean(feedback.model.basic.error)
-# [1] 8.037217
+# [1] 7.777306
 
 
 
@@ -78,16 +78,16 @@ testMeanError <- function(file){
 
 feb06 <- "~/Downloads/BlogFeedback/Feb/blogData_test-2012.02.06.00_00.csv"
 testMeanError(feb06)
-# [1] 2.317782
+# [1] 2.178989
 
 feb25 <- "~/Downloads/BlogFeedback/Feb/blogData_test-2012.02.25.00_00.csv"
 testMeanError(feb25)
-# [1] 2.859557
+# [1] 3.705112
 
 mar08 <- "~/Downloads/BlogFeedback/Mar/blogData_test-2012.03.08.00_00.csv"
 testMeanError(mar08)
-# [1] 6.465794
+# [1] 5.959064
 
 mar23<-"~/Downloads/BlogFeedback/Mar/blogData_test-2012.03.23.00_00.csv"
 testMeanError(mar23)
-# [1] 4.545202
+# [1] 5.468306
